@@ -9,6 +9,7 @@ REPORT_PATH = os.path.join(OUTPUT_PATH, 'FINAL_RESEARCH_REPORT.md')
 
 def generate():
     print("--- Generating Consolidated Research Report ---")
+    os.makedirs(OUTPUT_PATH, exist_ok=True)
     
     # Load metrics
     research_report_path = os.path.join(OUTPUT_PATH, 'research_report.csv')

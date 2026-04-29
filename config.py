@@ -9,8 +9,16 @@ def get_base_path():
     try:
         import google.colab
         # If in Colab, mount drive and use drive path
-        BASE_PATH = '/content/drive/MyDrive/DL/'
-        return BASE_PATH
+        # Try to find the folder dynamically in MyDrive
+        possible_paths = [
+            '/content/drive/MyDrive/DL/',
+            '/content/drive/MyDrive/DL - imagenet/',
+            '/content/drive/MyDrive/DL_2026/'
+        ]
+        for p in possible_paths:
+            if os.path.exists(p):
+                return p
+        return '/content/drive/MyDrive/DL/' # Default fallback
     except ImportError:
         # If local, use current working directory or absolute path to DL folder
         # We'll use the directory where this file resides

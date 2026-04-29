@@ -1,5 +1,5 @@
 # Neural Synergy: Final Research Report
-**Generated on:** 2026-04-23 15:22:56
+**Generated on:** 2026-04-29 08:29:58
 
 ## 1. Executive Summary
 This report summarizes the high-fidelity training results for the Neural Synergy emotion classification model. The project utilized an EfficientNetB0 backbone with systematic fine-tuning to achieve production-grade performance.
@@ -25,8 +25,8 @@ The following table quantifies the impact of key pipeline components (e.g., Data
 
 | scenario          |   accuracy |   performance_drop |
 |:------------------|-----------:|-------------------:|
-| Standard Pipeline |   0.413289 |          0         |
-| No Augmentation   |   0.457143 |         -0.0438538 |
+| Standard Pipeline |   0.415947 |          0         |
+| No Augmentation   |   0.456478 |         -0.0405316 |
 
 ## 4. Visual Evidence
 ### Confusion Matrix
