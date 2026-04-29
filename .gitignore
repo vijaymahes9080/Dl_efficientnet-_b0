@@ -5,3 +5,5 @@
 *.npy
 __pycache__/
 models/champion_model_mastery.keras
+__pycache__/
+models/champion_model_mastery.keras
